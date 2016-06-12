@@ -1,3 +1,5 @@
+# lấy tất cả các ký tự phía sau một ký tự "_" vd(abcd_dexx) nhưng số lượng ký tự phía trước và phía sau dấu "_" luôn thay đổi
+# subet all string after a given character, e.g. take all character after "_" in "abcd_dexx"
 # Given a table call test_table, string to be clip in column a, new string to be stored in column b
 
 Update test_table Set b = Right$(a,Len(a)-InStr(1,a,"_"))
